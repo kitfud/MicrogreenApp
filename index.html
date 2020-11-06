@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <!-- Required meta tags for Bootstrap and JQuery -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/ui-lightness/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+
+  <!-- JS Imports -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.js"></script>
+  <!-- Rename the JQueryUI 'tooltip' and 'button' classes to 'uitooltip' and 'uibutton' so that they won't conflict with Bootstrap's 'tooltip' and 'button' classes. -->
+  <script>
+    $.widget.bridge('uitooltip', $.ui.tooltip);
+    $.widget.bridge('uibutton', $.ui.button);
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <h1>Microgreen Tray Planner:</h1>
+  <br>
+   <div>
+<h4>Matt Size(10x20inches):</h4> 1/4, 1/2, 3/4, 1 
+<br>
+<input id="size-input" type="range" value="1" min="0.25" max="1" step="0.25"></input>
+</div>
+<h4>Microgreen:</h4>
+    <select id="crust-input">
+      <option>Broccoli</option>
+      <option>Raddish</option>
+      <option>Amaranth</option>
+    </select>
+<label for="start">Seeding date:</label>
+
+<input type="date" id="start" name="seeding-date"></br>
+<button id="submit">Create Label</button>
+
+  <h1 id="data"></h1>
+
+
+
+<script src= "script.js"></script>
+</body>
+
+</html>
