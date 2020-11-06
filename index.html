@@ -7,7 +7,8 @@
   <!-- CSS imports -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/ui-lightness/jquery-ui.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
-
+  <!-- Primary css file -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <!-- JS Imports -->
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
@@ -18,16 +19,18 @@
     $.widget.bridge('uibutton', $.ui.button);
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
+ 
 </head>
 
 <body>
-  <h1>Microgreen Tray Planner:</h1>
+  <h1>Microgreen Planner:</h1>
   <br>
    <div>
 <h4>Matt Size(10x20inches):</h4> 1/4, 1/2, 3/4, 1 
 <br>
 <input id="size-input" type="range" value="1" min="0.25" max="1" step="0.25"></input>
 </div>
+<canvas id="canvas" width="400" height="200"></canvas>
 <h4>Microgreen:</h4>
     <select id="crust-input">
       <option>Broccoli</option>
@@ -37,7 +40,7 @@
 <label for="start">Seeding date:</label>
 
 <input type="date" id="start" name="seeding-date"></br>
-<button id="submit">Create Label</button>
+<button id="submit">Create Plan</button>
 
   <h1 id="data"></h1>
 
