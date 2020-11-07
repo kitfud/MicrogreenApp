@@ -6,3 +6,10 @@ canvas{
 body{
   background: lightgoldenrodyellow;
 }
+.slider-width{
+  width:72%;
+}
+
+button{
+  background-color:yellow
+}
