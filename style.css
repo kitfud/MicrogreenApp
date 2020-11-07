@@ -7,9 +7,14 @@ body{
   background: lightgoldenrodyellow;
 }
 .slider-width{
-  width:72%;
+  width: 50%;
 }
 
 button{
   background-color:yellow
+}
+
+.col-centered{
+    float: relative;
+    margin:5px;
 }
